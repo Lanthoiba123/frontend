@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sports</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img src="../img/football.jpeg" alt="">
+            <p>Game on</p>
+        </div>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="../search/index.html">Categories</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="banner">
+        <img src="../img/arm.jpeg" alt="">
+        <div class="overlay-1"> </div>
+    </div>
+    <div class="banner-info">
+        <div class="banner-title">
+            <h1>All Your </h1> <span>
+                <h1>Sports</h1>
+            </span>
+            <h1>Needs At One Place</h1>
+        </div>
+        <p>
+            Welcome to our sports event web, where enthusiasts can seamlessly find players, organize
+            gatherings, and immerse themselves in the thrilling world of sports!
+        </p>
+
+    </div>
+    <div class="content">
+        <div class="field">
+            <div class="scroll"></div>
+        </div>
+        <div class="sectionEvent">
+            <div class="eventMainTitle">
+                <h3>Sports Event</h3>
+                <h3 class="va">View All <i class="fa-solid fa-angle-right"></i></h3>
+            </div>
+            <div class="events">
+                <div class="movement">
+                    <div data-slider="latest" class="button-back">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div data-slider="latest" class="button-next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="slider" id="eventList">
+                    <!-- <div class="event">
+                        <div class="eventImgDiv">
+                            <img class="eventImg" src="../img/tugofwar.jpeg" alt="">
+                        </div>
+                        <h3 class="eventTitle">Tug of War (Green vs Red)</h3>
+                        <div class="eventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="event">
+                        <div class="eventImgDiv">
+                            <img class="eventImg" src="../img/tugofwar.jpeg" alt="">
+                        </div>
+                        <h3 class="eventTitle">Tug of War (Green vs Red)</h3>
+                        <div class="eventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="event">
+                        <div class="eventImgDiv">
+                            <img class="eventImg" src="../img/tugofwar.jpeg" alt="">
+                        </div>
+                        <h3 class="eventTitle">Tug of War (Green vs Red)</h3>
+                        <div class="eventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="event">
+                        <div class="eventImgDiv">
+                            <img class="eventImg" src="../img/tugofwar.jpeg" alt="">
+                        </div>
+                        <h3 class="eventTitle">Tug of War (Green vs Red)</h3>
+                        <div class="eventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="event">
+                        <div class="eventImgDiv">
+                            <img class="eventImg" src="../img/tugofwar.jpeg" alt="">
+                        </div>
+                        <h3 class="eventTitle">Tug of War (Green vs Red)</h3>
+                        <div class="eventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="sectionEvent">
+            <div class="eventMainTitle">
+                <h3>Popular Games</h3>
+                <h3 class="va">View All <i class="fa-solid fa-angle-right"></i></h3>
+            </div>
+            <div class="events">
+                <div class="movement">
+                    <div data-slider="latest" class="button-back">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div data-slider="latest" class="button-next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="slider" id="gamesList">
+                    <!-- <div class="event">
+                        <div class="eventImgDiv">
+                            <img class="eventImg" src="../img/tugofwar.jpeg" alt="">
+                        </div>
+                        <h3 class="eventTitle">Tug of War (Green vs Red)</h3>
+                        <div class="eventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="event">
+                        <div class="eventImgDiv">
+                            <img class="eventImg" src="../img/tugofwar.jpeg" alt="">
+                        </div>
+                        <h3 class="eventTitle">Tug of War (Green vs Red)</h3>
+                        <div class="eventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="event">
+                        <div class="eventImgDiv">
+                            <img class="eventImg" src="../img/tugofwar.jpeg" alt="">
+                        </div>
+                        <h3 class="eventTitle">Tug of War (Green vs Red)</h3>
+                        <div class="eventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="event">
+                        <div class="eventImgDiv">
+                            <img class="eventImg" src="../img/tugofwar.jpeg" alt="">
+                        </div>
+                        <h3 class="eventTitle">Tug of War (Green vs Red)</h3>
+                        <div class="eventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="event">
+                        <div class="eventImgDiv">
+                            <img class="eventImg" src="../img/tugofwar.jpeg" alt="">
+                        </div>
+                        <h3 class="eventTitle">Tug of War (Green vs Red)</h3>
+                        <div class="eventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="sectionEvent">
+            <div class="eventMainTitle">
+                <h3>Popular Players</h3>
+                <h3 class="va">View All <i class="fa-solid fa-angle-right"></i></h3>
+            </div>
+            <div class="events">
+                <div class="movement">
+                    <div data-slider="latest" class="button-back">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div data-slider="latest" class="button-next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="slider" id="gamesList">
+                    <div class="event">
+                        <div class="eventImgDiv">
+                            <img class="eventImg" src="../img/tugofwar.jpeg" alt="">
+                        </div>
+                        <h3 class="eventTitle">Tug of War (Green vs Red)</h3>
+                        <div class="eventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="event">
+                        <div class="eventImgDiv">
+                            <img class="eventImg" src="../img/tugofwar.jpeg" alt="">
+                        </div>
+                        <h3 class="eventTitle">Tug of War (Green vs Red)</h3>
+                        <div class="eventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="event">
+                        <div class="eventImgDiv">
+                            <img class="eventImg" src="../img/tugofwar.jpeg" alt="">
+                        </div>
+                        <h3 class="eventTitle">Tug of War (Green vs Red)</h3>
+                        <div class="eventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="event">
+                        <div class="eventImgDiv">
+                            <img class="eventImg" src="../img/tugofwar.jpeg" alt="">
+                        </div>
+                        <h3 class="eventTitle">Tug of War (Green vs Red)</h3>
+                        <div class="eventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="event">
+                        <div class="eventImgDiv">
+                            <img class="eventImg" src="../img/tugofwar.jpeg" alt="">
+                        </div>
+                        <h3 class="eventTitle">Tug of War (Green vs Red)</h3>
+                        <div class="eventDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="section-child">
+            <div class="footer-child">
+                <h3>Quick Links</h3>
+                <ul class="footer-list">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-child">
+                <h3>Contact</h3>
+                <ul class="footer-listsdf">
+                    <li>North-East India, Manipur, Imphal-West, 795113</li>
+                    <li>+91 457698326</li>
+                    <li>+91 563287978</li>
+                    <li>konthoujamlanthoiba@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
