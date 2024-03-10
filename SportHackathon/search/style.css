@@ -5,6 +5,7 @@
 *::before {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
     flex-direction: column;
     gap: 10px;
     justify-content: flex-start;
+    overflow-x: hidden;
 }
 
 form {
@@ -48,6 +50,11 @@ nav {
             #16181fed 105%,
             transparent,
             transparent);
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 nav ul {
@@ -131,17 +138,6 @@ select option {
     padding: 30px;
 }
 
-.section {
-    color: white;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-    width: 1200px;
-    margin-top: 100px;
-    margin-left: 5rem;
-}
-
 .card img {
     width: 200px;
     object-fit: cover;
@@ -150,9 +146,58 @@ select option {
 
 .card {
     background-color: gray;
-    width: 200px;
+    width: fit-content;
     height: fit-content;
     /* margin-left: 30px; */
     padding: 10px;
     border-radius: 10px;
+}
+
+.section {
+    position: relative;
+    color: white;
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    width: 1000px;
+    margin-top: 100px;
+    margin-left: 5rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+
+
+.footer {
+    width: 100%;
+    padding: 30px 20px;
+    background-color: #4a4a4a;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.section-child {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.footer-child {
+    width: 22%;
+    padding: 20px 10px;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.footer-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-list li {
+    width: max-content;
 }

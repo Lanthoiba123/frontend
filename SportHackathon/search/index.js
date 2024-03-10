@@ -159,16 +159,16 @@ const playerUIElement = (dataElement) => {
 
   dataElement.map(
     (data) =>
-      (sectionPlayerElement.innerHTML += `<div class="card">
+      (sectionPlayerElement.innerHTML += `<a href="../playerprofile/player.html" <div class="card">
         <img src=${data.img} alt="">
         <p>${data.name}</p>
         <p>Professionals : ${data.games}</p>
         <p>Address : ${data.address}</p>
-        <p>Age : ${data.age} </p>
+        <p>Age : ${data.age} </p></a>
     </div>
         `)
   );
-  body.appendChild(sectionPlayerElement);
+  // body.appendChild(sectionPlayerElement);
 };
 const eventUIElement = (dataElement) => {
 //   const sectionPlayerElement = document.createElement("div");
@@ -185,5 +185,5 @@ const eventUIElement = (dataElement) => {
     </div>
         `)
   );
-  body.appendChild(sectionPlayerElement);
+  // body.appendChild(sectionPlayerElement);
 };
