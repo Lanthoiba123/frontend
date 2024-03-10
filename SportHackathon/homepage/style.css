@@ -275,7 +275,7 @@ span {
   /* width: 140%; */
   /* background-color: purple; */
   display: flex;
-  column-gap: 10px;
+  column-gap: 5px;
   transition: 0.7s;
   width: fit-content;
 }
