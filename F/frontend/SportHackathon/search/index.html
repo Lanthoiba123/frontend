@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../home/style.css"> -->
+    <link rel="stylesheet" href="css/boxed-check.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p{
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img src="../img/football.jpeg" alt="">
+            <p>Game on</p>
+        </div>
+        <ul>
+            <li>
+                <a href="../home/index.html">Home</a>
+            </li>
+            <li>
+                <a href="../search/index.html">Categories</a>
+            </li>
+            <li>
+                <a href="../about/index.html">About</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <form action="">
+        <label for="">I'am Looking for </label>
+        <div class="selection">
+            <button class="player active" data-select="player">Players</button>
+            <button class="event" data-select="event">Events</button>
+            <input id="searchInput" type="text" onkeyup="searchPlayer()" placeholder="Enter a place...">
+            <select id="sportSelect" onchange="searchPlayer()">
+                <option value="" disabled selected>Select Sports</option>
+                <option value="football">Football</option>
+                <option value="cricket">Cricket</option>
+                <option value="badminton">Badminton</option>
+                <option value="hockey">Hockey</option>
+                <option value="volleyball">Volleyball</option>
+                <option value="basketball">Basketball</option>
+                <option value="sepak takraw">Sepak Takraw</option>
+            </select>
+        </div>
+    </form>
+    <div class="section" id="container">
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

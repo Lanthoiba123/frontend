@@ -1,0 +1,242 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100vw;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 3rem;
+    background: linear-gradient(to left,
+            #16181fed 105%,
+            transparent,
+            transparent);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 3rem;
+}
+
+nav ul li:first-child {
+    display: flex;
+}
+
+nav ul li {
+    text-decoration: none;
+    /* border-bottom: 1px solid white; */
+    padding: 8px 16px;
+    /* transition: all .5s ease-in; */
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover {
+    border-bottom: 1px solid white;
+    background-color: rgba(128, 128, 128, 0.457);
+    border-radius: 5px;
+    transform: scale(1.1);
+
+}
+
+body,
+html {
+    z-index: 0;
+    padding-top: 55px;
+    flex-direction: column;
+    background-color: #1F2544;
+}
+
+nav ul li {
+    list-style: none;
+
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    gap: 2rem;
+}
+
+nav div img {
+    width: 60px;
+    border-radius: 999px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* height: 1900px; */
+    justify-content: start;
+    align-items: start;
+    color: white;
+}
+
+.card {
+    /* margin-top: 100px; */
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    align-self: flex-start;
+    align-content: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    /* padding-top: 50px; */
+    position: relative;
+    /* background: yellow; */
+}
+
+.card .right {
+    z-index: 99;
+    margin-top: 12rem;
+
+}
+
+.card .right iframe {
+    width: 450px;
+    height: 300px;
+}
+
+.card .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: fit-content;
+    padding: 3rem;
+    z-index: 10;
+    /* border-top: 10px solid transparent;
+    border-left: 10px solid #474F7A;
+    border-right: 10px solid transparent; */
+    /* background: transparent; */
+    background-color: #474F7A;
+    border-radius: 2.25rem;
+    /* backdrop-filter: blur(2px);s */
+}
+
+.details>* {
+    margin-top: 10px;
+}
+
+.card .left .places {
+    opacity: 0.5;
+}
+
+.card .left img {
+    /* position: absolute; */
+    width: 200px;
+    z-index: 11;
+    object-fit: cover;
+
+    border-radius: 999vmax;
+    aspect-ratio: 1/1;
+}
+
+.backgroundImage {
+    position: absolute;
+    height: 200px;
+    top: -60px;
+    left: 0;
+    width: 100vw;
+    margin-top: 60px;
+    z-index: 9;
+    background-color: gray;
+    background-image: url('../img/background.jpeg');
+    background-size: auto;
+    background-position: center;
+}
+
+.aboutPlayer {
+    padding: 3rem;
+}
+
+.aboutPlayer h2 {
+    margin-bottom: 10px;
+}
+
+.aboutPlayer p {
+    opacity: 0.8;
+}
+
+
+
+
+.footer {
+    width: 100%;
+    padding: 30px 20px;
+    background-color: #4a4a4a;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.section-child {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.footer-child {
+    width: 22%;
+    padding: 20px 10px;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.footer-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-list li {
+    width: max-content;
+}
+
+.video {
+    padding: 0 3rem;
+    margin-bottom: 40px;
+}
+
+.videocard {
+    margin-top: 10px;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.text3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.videocard img {
+    height: 160px;
+    aspect-ratio: 16/9;
+}

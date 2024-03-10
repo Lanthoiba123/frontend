@@ -1,0 +1,93 @@
+@media(max-width:576px)
+{
+    .navigation
+    {
+        width: 10%;
+        padding: 0;
+        overflow: hidden;
+    }
+    .logo-img
+    {
+        width: 100%;
+        margin-top: 100px;
+        padding: 3px;
+
+        /* align-self: center; */
+    }
+    .banner-img
+    {
+        display: none;
+    }
+    .banner
+    {
+        height: 45vh;
+        background-image: url("../images/banner.webp");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 1;
+    }
+    .overlay-2
+    {
+        background: linear-gradient(to top,#16181fed 10%, transparent, transparent );
+
+    }
+    .banner-info
+    {
+        width: 100%;
+        justify-content: center;
+        row-gap: 15px;
+    }
+    .content
+    {
+        margin-top: 45vh;
+    }
+    .home
+    {
+        height: 45vh;
+    }
+    .banner-info{
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 30px 20px;
+        opacity: .9;
+        font-size: 15px;
+        /* background-color: #0f1014; */
+    }
+    .buttons
+    {
+        width: 50%;
+        padding: 10px 20px;
+    }
+    .watch-btn, .plus-btn
+    {
+        padding: 0 15px;
+    }
+    .movement
+    {
+        padding-left: 19px;
+        width: 98%;
+    }
+    .brand-div
+    {
+        width: 30%;
+        flex-wrap: wrap;
+        height: 100px;
+    }
+    .movies, .sports
+    {
+        overflow-x: scroll;
+    }
+    .movement
+    {
+        display: none;
+    }
+    .movie-img
+    {
+        width: 180px;
+    }
+    .sport-img
+    {
+        width: 350px;
+    }
+}
